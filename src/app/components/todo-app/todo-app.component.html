@@ -1,0 +1,10 @@
+<div>
+  <h2>TODO</h2>
+  <form (ngSubmit)="addTodo()">
+    <label for="newTodo">What needs to be done?</label>
+    <br>
+    <input autocomplete="off" type="text" [(ngModel)]="newTodo.title" name="title">
+    <button type="submit">Add Item</button>
+  </form>
+  <app-todo-list [list]="toDos"></app-todo-list>
+</div>
